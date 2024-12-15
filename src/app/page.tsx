@@ -1,18 +1,20 @@
-import BrowseRange from "@/app/components/BrowseRange";
-import FuniroFurniture from "@/app/components/FuniroFurniture";
-import Hero from "@/app/components/Hero";
-import Inspirations from "@/app/components/Inspirations";
-import OurProducts from "@/app/components/OurProducts";
+
+import HeroSection from "@/components/HeroSection"
+import BrowseSection from "@/components/BrowserSection"
+import InspirationSection from "@/components/inspiration-section"
+import ProductSection from "@/components/product-section"
+import GallerySection from "@/components/gallery-section"
+
+
 
 export default function Home() {
   return (
-    <>
-    <Hero/>
-    <BrowseRange/>  
-    <OurProducts/>
-    <Inspirations/>
-    <FuniroFurniture/>
-
-    </>
+    <div>
+      <HeroSection />
+      <BrowseSection />
+      <ProductSection />
+      <InspirationSection />
+      <GallerySection />
+    </div>
   );
 }
