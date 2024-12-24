@@ -29,7 +29,7 @@ export default function HeroSection() {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis.
           </p>
-          <button className="px-6 py-2 bg-[#B88E2F] text-white font-semibold rounded">
+          <button className="px-10 py-5 bg-[#B88E2F] text-white font-semibold ">
             Buy Now
           </button>
         </div>
