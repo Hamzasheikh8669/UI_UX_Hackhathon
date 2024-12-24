@@ -11,14 +11,14 @@ export default function HeroSection() {
             src="/images/home-hero.jpeg"
             alt="Furniture Collection"
             width={1440}
-            height={100}
+            height={90}
             loading="eager"
             className="w-full h-auto"
           />
         </div>
 
         {/* Left content */}
-        <div className="heroText bg-[#FFF3E3] hidden md:block w-[34rem] absolute top-[25%] left-[50%] transform -translate-x-[50%] rounded-[6px] p-[4rem]">
+        <div className="heroText bg-[#FFF3E3] hidden md:block w-[34rem] absolute top-[15%] left-[75%] transform -translate-x-[50%] rounded-[6px] p-[4rem] shadow-lg">
           <p className="text-gray-500 uppercase font-medium text-sm mb-2">
             New Arrival
           </p>

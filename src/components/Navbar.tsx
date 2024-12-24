@@ -42,8 +42,8 @@ const Navbar = () => {
     <nav className="bg-white shadow-md">
       <div className="container mx-auto px-4 flex justify-between items-center py-4">
         {/* Logo Section */}
-        <div className="flex items-center">
-          <div className="text-2xl font-bold text-black flex items-center">
+        <div className=" ">
+          <div className="text-2xl font-bold text-black flex items-center  ">
             <Image 
               src="/images/logo.png" 
               width={50} 
@@ -51,28 +51,28 @@ const Navbar = () => {
               alt="Furniro" 
               priority 
             />
-            <span className="ml-2">Furniro</span>
+            <span >Furniro</span>
           </div>
         </div>
 
         {/* Desktop Menu Items */}
-        <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-700">
-          <li className="hover:text-black cursor-pointer">
-            <Link href="/">Home</Link>
+        <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-700 text-[16px] gap-[20px] ">
+          <li className="hover:text-black cursor-pointer ">
+            <Link href="/" className="text-[18px]">Home</Link>
           </li>
-          <li className="hover:text-black cursor-pointer">
-            <Link href="/shop">Shop</Link>
+          <li className="hover:text-black cursor-pointer ">
+            <Link href="/shop" className="text-[18px]">Shop</Link>
           </li>
-          <li className="hover:text-black cursor-pointer">
-            <Link href="/blog">Blog</Link>
+          <li className="hover:text-black cursor-pointer ">
+            <Link href="/blog" className="text-[18px]">Blog</Link>
           </li>
-          <li className="hover:text-black cursor-pointer">
-            <Link href="/contact">Contact</Link>
+          <li className="hover:text-black cursor-pointer ">
+            <Link href="/contact" className="text-[18px]">Contact</Link>
           </li>
         </ul>
 
         {/* Icons Section */}
-        <div className="hidden md:flex items-center space-x-4 text-xl text-gray-700 hover:text-black cursor-pointer">
+        <div className="hidden md:flex items-center space-x-8 text-xl text-gray-700 hover:text-black cursor-pointer">
           <FiUser />
           <FiSearch />
           <FiHeart />
@@ -85,7 +85,7 @@ const Navbar = () => {
             >
               <FiShoppingCart className="text-2xl" />
               {/* Optional Badge for Item Count */}
-              <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full px-2 py-1">
+              <span className="absolute -top-2 -right-5 bg-red-500 text-white text-xs rounded-full px-2 py-1">
                 3
               </span>
             </button>

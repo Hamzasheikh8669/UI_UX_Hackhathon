@@ -1,5 +1,5 @@
 
-import ProductCard from "./product-card";
+  import ProductCard from "./product-card";
 
 const products = [
   {
@@ -14,6 +14,7 @@ const products = [
     description: "Stylish cafe chair",
     price: 2500000,
     image: "/images/img2.png",
+    tag: "-30%" as const,
   },
   {
     name: "Lolito",
