@@ -22,9 +22,7 @@ const Navbar = () => {
   // Close menu or cart when clicking outside
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
-      if (
-        menuRef.current && !menuRef.current.contains(event.target as Node)
-      ) {
+      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
         setIsMenuOpen(false);
       }
       if (cartRef.current && !cartRef.current.contains(event.target as Node)) {
@@ -44,30 +42,38 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className=" ">
           <div className="text-2xl font-bold text-black flex items-center  ">
-            <Image 
-              src="/images/logo.png" 
-              width={50} 
-              height={50} 
-              alt="Furniro" 
-              priority 
+            <Image
+              src="/images/logo.png"
+              width={50}
+              height={50}
+              alt="Furniro"
+              priority
             />
-            <span >Furniro</span>
+            <span>Furniro</span>
           </div>
         </div>
 
         {/* Desktop Menu Items */}
         <ul className="hidden md:flex space-x-6 text-sm font-medium text-gray-700 text-[16px] gap-[20px] ">
           <li className="hover:text-black cursor-pointer ">
-            <Link href="/" className="text-[18px]">Home</Link>
+            <Link href="/" className="text-[18px]">
+              Home
+            </Link>
           </li>
           <li className="hover:text-black cursor-pointer ">
-            <Link href="/shop" className="text-[18px]">Shop</Link>
+            <Link href="/shop" className="text-[18px]">
+              Shop
+            </Link>
           </li>
           <li className="hover:text-black cursor-pointer ">
-            <Link href="/blog" className="text-[18px]">Blog</Link>
+            <Link href="/blog" className="text-[18px]">
+              Blog
+            </Link>
           </li>
           <li className="hover:text-black cursor-pointer ">
-            <Link href="/contact" className="text-[18px]">Contact</Link>
+            <Link href="/contact" className="text-[18px]">
+              Contact
+            </Link>
           </li>
         </ul>
 
@@ -115,17 +121,18 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="text-gray-700 focus:outline-none hover:text-black"
           >
-            {isMenuOpen ? <GrFormClose size={24} /> : <AiOutlineMenu size={24} />}
+            {isMenuOpen ? (
+              <GrFormClose size={24} />
+            ) : (
+              <AiOutlineMenu size={24} />
+            )}
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div
-          ref={menuRef}
-          className="md:hidden bg-white shadow-lg"
-        >
+        <div ref={menuRef} className="md:hidden bg-white shadow-lg">
           <ul className="space-y-4 py-4 px-4 text-sm font-medium text-gray-700">
             <li className="hover:text-black cursor-pointer">
               <Link href="/">Home</Link>
@@ -144,7 +151,7 @@ const Navbar = () => {
             <FiUser />
             <FiSearch />
             <FiHeart />
-            <Link href="/components/shopping-cart">
+            <Link href="/cart">
               <FiShoppingCart />
             </Link>
           </div>
